@@ -2,12 +2,20 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 .navbar
 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    cursor: pointer;
    
 }
-img{
+.image{
     height: 50px;
     width: auto;
     border-radius: 50%;
@@ -20,6 +28,9 @@ img{
     justify-content: space-around;
     align-items: center;
     
+}
+.navlist>li>a:hover{
+    color: black;
 }
 .rightnav{
     flex:.5;
@@ -59,4 +70,181 @@ img{
     background:rgba(0,0,0,0.7) url(./download.jfif);
     background-size: cover;
     background-blend-mode: darken;
+}
+.boxmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+.firstsection{
+    height: 100vh;
+}
+.firsthalf>p{
+    color: white;
+}
+.firsthalf
+{
+    flex: 0.8;
+    margin-top: 60px;
+
+}
+.secondhalf{
+    flex:0.2;
+    margin-top: 100px;
+       
+}
+.image2
+{
+    width: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid green;
+    width: 100%;
+}
+.small
+{
+    font-size: 41px;
+    margin-top: 6px;
+    
+}
+.large
+{
+    font-size: 18px;
+    letter-spacing: 1px;
+    
+}
+.btn1
+{
+    padding: 5px;
+    margin: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    color: white;
+
+}
+.section1
+{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 40px;
+}
+.sectionleft{
+    flex-direction: row-reverse;
+}
+.target
+{
+    width: 290px;
+    margin-right: 20px;
+    height: 300px;
+}
+.secondhalf>figure{
+    margin-top: 120px;
+}
+.contact
+{
+    background-color: cornsilk;
+}
+.input{
+    margin: auto;
+}
+.heading 
+{
+    text-align: center;
+    padding: 26px;
+}
+.form
+{
+    max-width: 62%;
+    margin: auto;
+}
+.form>input{
+    width: 100%;
+    margin: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid green;
+    height: 25px;
+}
+.textarea
+{
+    border-radius: 10px;
+    border: 2px solid green;
+    padding: 10px;
+}
+.text-footer
+{
+    text-align: center;
+    font-size: 25px;
+    padding: 30px 0;
+    color: white;
+}
+.burger
+{
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+.line{
+    width: 33px;
+    height: 4px;
+    background-color: white;
+    margin: 3px 3px;
+}
+
+@media only screen and (max-width:1036px)
+{
+    .navlist{
+        flex-direction: column;
+
+    }
+    .navbar{
+        flex-direction: column;
+      transition: all 0.7s ease-out;
+      height: 300px;
+
+    }
+    .rightnav{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .rightnav>input{
+        width: 100px;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav
+    {
+        height: 72px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .section1{
+        flex-direction: column;
+    }
+    .boxmain{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .firstsection{
+height: 780px;
+    }
 }

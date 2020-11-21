@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar
+{
+    display: flex;
+   
+}
+img{
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    border: 2px solid green;
+}
+.navlist{
+    flex:.5;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.rightnav{
+    flex:.5;
+    text-align: right;
+   margin: 10px;
+}
+.navlist>li>a{
+    text-decoration: none;
+    color: white;
+}
+.navlist>li
+{
+    list-style: none;
+}
+.rightnav>input{
+    height: 30px;
+    width: 200px;
+    border: 2px solid yellowgreen;
+    border-radius: 10px;
+    outline: none;
+}
+.rightnav>input:hover{
+    
+}
+.btn
+{
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    border:  2px solid grey;
+    outline: none;
+    font-size: 20px;
+    padding-bottom: 7px;
+}
+.background
+{
+    background:rgba(0,0,0,0.7) url(./download.jfif);
+    background-size: cover;
+    background-blend-mode: darken;
+}
